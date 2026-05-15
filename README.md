@@ -56,4 +56,11 @@ Telegram bot that converts short videos into color ASCII art while preserving th
 5. Run the bot
    ```bash
    python bot.py
- 
+
+
+ Limitations
+
+    Maximum video duration: 15 seconds
+    Maximum output file size: 40 MB (Telegram upload limit)
+    Rendering runs in a thread pool to avoid blocking the async event loop
+    MemoryStorage is used by default; switch to RedisStorage for production deployments
