@@ -45,7 +45,7 @@ Telegram bot that converts short videos into color ASCII art while preserving th
    pip install -r requirements.txt
   Configure environment variables
    ```bash
-   cp .env.example .env
+     cp .env.example .env
 ```
 4. Open .env and set your bot token:
    ```bash
