@@ -38,3 +38,22 @@ Telegram bot that converts short videos into color ASCII art while preserving th
    ```bash
    git clone https://github.com/yourusername/ascii-video-bot.git
    cd ascii-video-bot
+2. Create a virtual environment and install dependencies
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+  Configure environment variables
+   ```bash
+   cp .env.example .env
+```
+4. Open .env and set your bot token:
+   ```bash
+   BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+   FONT_PATH=/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+   DEBUG_MODE=false
+   LOG_LEVEL=INFO
+5. Run the bot
+   ```bash
+   python bot.py
+ 
